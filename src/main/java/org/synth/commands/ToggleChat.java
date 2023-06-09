@@ -11,7 +11,7 @@ public class ToggleChat implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
         Player p = (Player) commandSender;
-        if(!p.isOp()){
+        if(!p.isOp() || !p.hasPermission("staffchat.use")){
             p.sendMessage("You do not have permission to use this command.");
             return false;
         }else {
