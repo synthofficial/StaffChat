@@ -1,0 +1,9 @@
+name: StaffChat
+version: '1.0.0'
+main: org.synth.StaffChat
+api-version: '1.20'
+commands:
+  staffchat:
+    description: All of staff chat commands
+    usage: /staffchat [toggle]
+    aliases: [sc]
